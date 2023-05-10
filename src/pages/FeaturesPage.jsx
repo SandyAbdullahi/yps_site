@@ -2,8 +2,8 @@ import React from 'react';
 
 const FeaturesPage = () => {
   return (
-    <div>
-      {/* Your page content goes here */}
+    <div className="flex items-center justify-center h-screen">
+      <h1>FEATURES PAGE</h1>
     </div>
   );
 };
