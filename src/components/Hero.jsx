@@ -17,7 +17,7 @@ const HeroSection = () => {
           loop
           muted
           playsInline
-      
+          poster="./Picture13.png"  
         >
           <source src="./YPS_BACKGROUND.webm" type="video/webm" />
           {/* Add additional source tags for different video formats if needed */}
