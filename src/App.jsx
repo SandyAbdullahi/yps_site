@@ -7,7 +7,7 @@ import { AnimatePresence } from 'framer-motion';
 
 function App() {
   return (
-    <AnimatePresence>
+    <AnimatePresence mode='wait'>
     <Router>
       <Header />
       <Switch>
