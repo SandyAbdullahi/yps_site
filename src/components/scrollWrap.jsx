@@ -5,10 +5,10 @@ const VelocityScrollAnimation = () => {
     const { scrollYProgress } = useScroll();
     const x = useTransform(scrollYProgress, [0, 1],  [0, -600]);
     return (
-        <motion.div className="relative flex flex-col p-4 parallax-text bg-black text-white overflow-hidden" 
+        <motion.div className="relative flex flex-col p-8 parallax-text bg-vampire-black text-white overflow-hidden" 
            
         >
-            <motion.h1 className="text-9xl whitespace-nowrap m-0 text-left"
+            <motion.h1 className="text-9xl whitespace-nowrap text-left"
              initial = {{ x: '-1500%' }}
              animate = {{
                  x: 1500,
