@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { HeroSection } from '../components';
+import { HeroSection, VelocityScrollAnimation } from '../components';
 
 const HomePage = () => {
   return (
@@ -9,8 +9,13 @@ const HomePage = () => {
     exit={{opacity: 0}}
     >
       <HeroSection />
+     <div className="overflow-hidden">
+     <VelocityScrollAnimation />
+     </div>
 
-      <h1>HOMEPAGE</h1>
+     <div className="bg-yellow-300 h-screen">
+     <h1>HOMEPAGE</h1>
+     </div>
         </motion.div>
 
   );
