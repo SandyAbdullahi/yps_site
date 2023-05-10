@@ -2,10 +2,12 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { HomePage, AboutPage, ServicesPage, FeaturesPage, ContactPage } from './pages';
 import { Header } from './components';
 import './App.css';
+import { AnimatePresence } from 'framer-motion';
 
 
 function App() {
   return (
+    <AnimatePresence>
     <Router>
       <Header />
       <Switch>
@@ -16,6 +18,7 @@ function App() {
         <Route path="/contact" component={ContactPage} />
       </Switch>
     </Router>
+    </AnimatePresence>
   );
 }
 
