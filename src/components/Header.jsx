@@ -76,7 +76,7 @@ const Header = () => {
         <AnimatePresence>
       {open && (
      
-        <Dialog as={motion.div} className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}
+        <Dialog as={motion.div} className="lg:hidden relative z-50" open={mobileMenuOpen} onClose={setMobileMenuOpen}
         
         initial={{opacity: 0, width: 0}}
         animate={{opacity: 1, width: "100%"}}
