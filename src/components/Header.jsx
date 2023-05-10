@@ -1,8 +1,27 @@
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
+import { useState, Fragment } from 'react'
+import { Dialog, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 
+const sidebar = {
+  open: (height = 1000) => ({
+    clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+    transition: {
+      type: "spring",
+      stiffness: 20,
+      restDelta: 2
+    }
+  }),
+  closed: {
+    clipPath: "circle(30px at 40px 40px)",
+    transition: {
+      delay: 0.5,
+      type: "spring",
+      stiffness: 400,
+      damping: 40
+    }
+  }
+};
 
 
 const navigation = [
@@ -16,6 +35,7 @@ const navigation = [
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [active, setActive] = useState("");
+    let [isOpen, setIsOpen] = useState(true)
 
   return (
       <header className="absolute inset-x-0 top-0 z-50">
@@ -52,25 +72,26 @@ const Header = () => {
       
           </div>
         </nav>
-
-        <motion.div 
-             initial={{x: 0}}
-             whileInView={{x: 50}}
-             transition={{duration: 10}}
-             exit={{x: 0}}
+        
+        <AnimatePresence>
+      {open && (
+     
+        <Dialog as={motion.div} className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}
+        
+        initial={{opacity: 0, width: 0}}
+        animate={{opacity: 1, width: "100%"}}
+        exit={{opacity: 0, width: 0, duration:0.5}}
+        transition={{staggerChildren: 0.07, delayChildren: 0.2, duration: 0.5}}
         >
-        <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-[15rem] overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <motion.img
+                <img
                   className="h-8 w-auto"
                   src="./logo_no_text.png"
                   alt=""
-                  initial={{opacity: 0}}
-                  whileInView={{opacity: 1}}
                 />
               </a>
               <button
@@ -101,9 +122,9 @@ const Header = () => {
             </div>
           </Dialog.Panel>
         </Dialog>
-
-
-        </motion.div>
+        
+        )}
+       </AnimatePresence>
       </header>
 
 )
