@@ -10,9 +10,9 @@ const HeroSection = () => {
 
   return (
     <section className="h-[60vh]">
-      <div className="h-full fixed -z-10">
+      <div className="h-full lg:fixed ">
         <video
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover absolute -z-10"
           autoPlay
           loop
           muted
