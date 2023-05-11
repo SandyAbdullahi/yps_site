@@ -1,24 +1,28 @@
-import React from 'react';
+import React, { useEffect, useRef }from 'react';
 import { motion } from 'framer-motion';
 
 const HeroSection = () => {
-  const textAnimation = {
-    initial: { y: '100%', opacity: 0 },
-    animate: { y: 0, opacity: 1 },
-    transition: { duration: 2, delay: 0.5 },
-  };
+
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    // After the component mounts, update the video source
+    videoRef.current.src = './YPS_BACKGROUND.webm';
+  }, []);
+
 
   return (
     <section className="h-[60vh]">
       <div className="h-full">
         <video
+          ref={videoRef}
           className="w-full h-full object-cover absolute -z-10"
           autoPlay
           loop
           muted
           playsInline
           // poster="./Picture13.png"  
-          backgroundColor="white"
+        
         >
           <source src="./YPS_BACKGROUND.webm" type="video/webm" />
           {/* Add additional source tags for different video formats if needed */}
