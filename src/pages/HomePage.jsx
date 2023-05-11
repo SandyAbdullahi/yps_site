@@ -9,7 +9,7 @@ return (
 
   <HeroSection />
 
-  <div className="overflow-hidden fixed bottom-[9vh]">
+  <div className="overflow-hidden">
     <VelocityScrollAnimation />
   </div>
 
