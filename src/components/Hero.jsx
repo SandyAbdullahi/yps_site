@@ -10,14 +10,14 @@ const HeroSection = () => {
 
   return (
     <section className="h-[60vh]">
-      <div className="h-full lg:fixed ">
+      <div className="h-full">
         <video
           className="w-full h-full object-cover absolute -z-10"
           autoPlay
           loop
           muted
           playsInline
-          poster="./Picture13.png"  
+          // poster="./Picture13.png"  
           backgroundColor="white"
         >
           <source src="./YPS_BACKGROUND.webm" type="video/webm" />
