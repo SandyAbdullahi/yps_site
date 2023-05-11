@@ -9,7 +9,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="h-screen flex -mb-10">
+    <section className="h-screen flex">
       <div className="absolute inset-0 z-0 bottom-0">
         <video
           className="w-full h-full object-cover"
