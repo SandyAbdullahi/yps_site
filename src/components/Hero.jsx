@@ -9,8 +9,8 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="h-screen flex">
-      <div className="absolute inset-0 z-0 bottom-0">
+    <section className="h-full flex">
+      <div className="absolute h-[80vh]">
         <video
           className="w-full h-full object-cover"
           autoPlay
@@ -24,9 +24,8 @@ const HeroSection = () => {
         </video>
 
            <div className="bg-gradient-to-b from-secondary to-transparent opacity-50 absolute inset-0"></div>
-      </div>
       <motion.div
-        className="absolute bottom-0 right-0 z-10 text-white text-right pr-8 pb-8"
+        className="absolute bottom-0 right-0 z-10 text-white text-right"
      
       >
         <motion.h1 className="text-6xl sm:text-5xl lg:text-6xl xl:text-8xl 2xl:text-9xl font-bold mb-6 text-primary"
@@ -44,6 +43,7 @@ const HeroSection = () => {
           Experience the Power of Visual Storytelling
         </motion.p>
       </motion.div>
+      </div>
     </section>
   );
 };
