@@ -15,9 +15,9 @@ return (
 
   <section className="services">
 
-  {/* <div className="h-screen">
+  <div className="h-screen bg-slate-600">
     <h1>HOMEPAGE</h1>
-  </div> */}
+  </div>
 
   </section>
 

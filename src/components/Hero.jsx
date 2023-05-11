@@ -10,7 +10,7 @@ const HeroSection = () => {
 
   return (
     <section className="h-[60vh]">
-      <div className="h-[60vh]">
+      <div className="h-full">
         <video
           className="w-full h-full object-cover"
           autoPlay
@@ -23,12 +23,13 @@ const HeroSection = () => {
           {/* Add additional source tags for different video formats if needed */}
         </video>
 
-           <div className="bg-gradient-to-b from-secondary to-transparent opacity-50 absolute inset-0 h-[60vh]">
+        <div className='absolute inset-0 h-[60vh]'>
+           <div className="bg-gradient-to-b from-secondary to-transparent opacity-50 absolute inset-0"></div>
+           <div className='bottom-3 absolute right-3 text-right'>
+          <h1 className='text-primary text-5xl '>There Will Be Some</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             
            </div>
-        <div className='absolute text-right right-5 bottom-0 z-10 h-[60vh]'>
-          <h1 className='text-primary text-6xl'>Text</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </div>
     </section>
