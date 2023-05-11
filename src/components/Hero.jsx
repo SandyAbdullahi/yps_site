@@ -4,11 +4,11 @@ import { motion } from 'framer-motion';
 const HeroSection = () => {
 
   const videoRef = useRef(null);
-
+  const url = './YPS_BACKGROUND.webm';
   useEffect(() => {
     // After the component mounts, update the video source
-    videoRef.current.src = './YPS_BACKGROUND.webm';
-  }, []);
+    videoRef.current?.load();
+  }, [url]);
 
 
   return (
@@ -24,7 +24,7 @@ const HeroSection = () => {
           // poster="./Picture13.png"  
         
         >
-          <source src="./YPS_BACKGROUND.webm" type="video/webm" />
+          <source src={url} type="video/webm" />
           {/* Add additional source tags for different video formats if needed */}
         </video>
 
