@@ -8,7 +8,7 @@ const VelocityScrollAnimation = () => {
         <motion.div className="flex flex-col p-8 parallax-text bg-vampire-black text-white overflow-hidden" 
            
         >
-            <motion.h1 className="text-2xl whitespace-nowrap text-left"
+            <motion.h1 className="text-2xl whitespace-nowrap text-left font-bold"
              initial = {{ x: 0 }}
              animate = {{
                  x: -1000,
