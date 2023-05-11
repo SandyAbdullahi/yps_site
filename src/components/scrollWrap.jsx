@@ -9,13 +9,13 @@ const VelocityScrollAnimation = () => {
            
         >
             <motion.h1 className="text-2xl whitespace-nowrap text-left"
-             initial = {{ x: '-300%' }}
+             initial = {{ x: 0 }}
              animate = {{
-                 x: '300%',
+                 x: -1000,
                  transition: {
                     repeat: Infinity,
-                    repeatType: 'reverse',
-                     duration: 50,
+                   
+                     duration: 10,
                      ease: 'linear',
                     
                  }

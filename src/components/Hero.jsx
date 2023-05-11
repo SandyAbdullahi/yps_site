@@ -25,9 +25,9 @@ const HeroSection = () => {
 
         <div className='absolute inset-0 h-[60vh]'>
            <div className="bg-gradient-to-b from-secondary to-transparent opacity-50 absolute inset-0"></div>
-           <div className='bottom-3 absolute right-3 text-right'>
-          <h1 className='text-primary text-5xl '>There Will Be Some</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+           <div className='bottom-3 absolute right-3 text-right pl-5'>
+          <h1 className='text-primary font-bold text-7xl '>There Will Be Some</h1>
+          <p className='text-white'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             
            </div>
         </div>

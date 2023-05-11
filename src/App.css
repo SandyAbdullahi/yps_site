@@ -1,5 +1,8 @@
 @import url(./styles/tailwind.css);
+@import url(../public/fonts/nexa.css);
+
 body {
+    font-family: 'nexa';
     background-color: #000;
 }
 
