@@ -22,9 +22,9 @@ const HeroSection = () => {
           muted
           playsInline
           poster="./Picture13.png"  
-        
+          src={url} type="video/webm"
         >
-          <source src={url} type="video/webm" />
+          
           {/* Add additional source tags for different video formats if needed */}
         </video>
 
