@@ -16,12 +16,12 @@ const HeroSection = () => {
       <div className="h-full">
         <video
           ref={videoRef}
-          className="w-full h-full object-cover absolute -z-10"
+          className="w-full h-full object-cover absolute bg-[50% 50%] -z-10"
           autoPlay
           loop
           muted
           playsInline
-          // poster="./Picture13.png"  
+          poster="./Picture13.png"  
         
         >
           <source src={url} type="video/webm" />
