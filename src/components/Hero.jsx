@@ -25,7 +25,7 @@ const HeroSection = () => {
 
            <div className="bg-gradient-to-b from-secondary to-transparent opacity-50 absolute inset-0"></div>
       <motion.div
-        className="absolute bottom-0 right-0 z-10 text-white text-right"
+        className="absolute bottom-0 right-3 z-10 text-white text-right  pl-6 pb-6"
      
       >
         <motion.h1 className="text-6xl sm:text-5xl lg:text-6xl xl:text-8xl 2xl:text-9xl font-bold mb-6 text-primary"
