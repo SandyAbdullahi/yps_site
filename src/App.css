@@ -9,3 +9,8 @@ body {
 .parallax-text {
     transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
+.videoBG {
+    background: url(./YPS_BACKGROUND.webm) no-repeat center center fixed;
+    background-size: cover;
+  }
