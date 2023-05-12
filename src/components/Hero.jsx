@@ -10,9 +10,11 @@ return (
 
 
   <div className="h-full">
-    <video className="w-full h-full object-cover" src="./YPS_BACKGROUND.webm" type="video/mp4" autoPlay loop muted playsInline poster='backgroundColor=#000;'>
-
-    </video>
+    <div dangerouslySetInnerHTML={{__html:`
+        <video className="w-full h-full object-cover" src="./YPS_BACKGROUND.webm" type="video/mp4" autoPlay loop muted playsInline poster='backgroundColor=#000;'></video>
+    
+    `}}/>
+  
     <div className="bg-gradient-to-b from-secondary to-transparent opacity-50 absolute inset-0 h-[60vh]"></div>
     <div className="videoBG">
       <div className="absolute inset-0 h-[60vh]">
