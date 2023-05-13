@@ -13,13 +13,30 @@ return (
     <VelocityScrollAnimation />
   </div>
 
-  <section className="services">
-
-  <div className="h-screen bg-slate-600">
-    <h1>HOMEPAGE</h1>
-  </div>
-
-  </section>
+  <section className="services container mx-auto py-8">
+  <div className="grid grid-cols-1 gap-8 md:grid-cols-2 m-5">
+        <div className="bg-gray-100 p-4">
+          <h2 className="text-xl font-bold mb-2">Card 1</h2>
+          <p className="text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, maiores!</p>
+        </div>
+        <div className="bg-gray-100 p-4">
+          <h2 className="text-xl font-bold mb-2">Card 2</h2>
+          <p className="text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, maiores!</p>
+        </div>
+        {/* Add more cards here */}
+      </div>
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 m-5">
+        <div className="bg-gray-100 p-4">
+          <h2 className="text-xl font-bold mb-2">Card 1</h2>
+          <p className="text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, maiores!</p>
+        </div>
+        <div className="bg-gray-100 p-4">
+          <h2 className="text-xl font-bold mb-2">Card 2</h2>
+          <p className="text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, maiores!</p>
+        </div>
+        {/* Add more cards here */}
+      </div>
+    </section>
 
 </motion.div>
 
