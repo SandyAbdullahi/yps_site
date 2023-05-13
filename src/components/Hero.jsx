@@ -11,10 +11,9 @@ return (
 
   <div className="h-full">
     
-        <video className="w-full h-full object-cover" src="./YPS_BACKGROUND.webm" type="video/mp4"  loop={true} muted={true} autoPlay={true} playsInline={true} poster='backgroundColor=#000;'>
-
-        </video>
+  
     
+    <img className="w-full h-full object-cover"   src="./YPS_BACKGROUND.gif" alt="" />
    
   
     <div className="bg-gradient-to-b from-secondary to-transparent opacity-50 absolute inset-0 h-[60vh]"></div>
