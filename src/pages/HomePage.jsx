@@ -12,19 +12,19 @@ offset: ["end end", "end start"],
 });
 
 const scale = useTransform(scrollYProgress, [1, 0.5], [0, 1]);
-const  opacity = useTransform(scrollYProgress, [0, 1.5], [1, 0]);
+const  opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
 return (
 <div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
 
-<motion.div  ref={targetRef} style={{ scale, opacity }}>
+<motion.div  ref={targetRef} style={{ opacity }}>
   <HeroSection />
-
-</motion.div>
 
   <div className="overflow-hidden">
     <VelocityScrollAnimation />
   </div>
+</motion.div>
+
 
   <section className="services container mx-auto py-8">
     <div className="container px-8">
