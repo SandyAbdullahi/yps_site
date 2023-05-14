@@ -50,7 +50,7 @@ const Header = () => {
               />
             </a>
           </div>
-          <div className="flex lg:hidden bg-primary rounded-full p-5">
+          <div className="flex lg:hidden bg-primary rounded-full p-5 shadow-xl">
             <motion.button
               type="button"
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-100"

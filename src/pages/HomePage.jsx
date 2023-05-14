@@ -32,7 +32,7 @@ return (
       <p className='text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veniam totam blanditiis. Eum eligendi iste facilis alias, atque a rerum sint aut.</p>
     </div>
   <div className="grid grid-cols-1 gap-8 md:grid-cols-2 m-5">
-        <div className="bg-gray-100 p-4 h-96">
+        <div className="bg-gray-100 p-4 h-96 bg">
           <h2 className="text-xl font-bold mb-2">Card 1</h2>
           <p className="text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, maiores!</p>
         </div>
@@ -40,7 +40,7 @@ return (
           <h2 className="text-xl font-bold mb-2">Card 2</h2>
           <p className="text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, maiores!</p>
         </div>
-        {/* Add more cards here */}
+  
       </div>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 m-5">
         <div className="bg-gray-100 p-4 h-96">
@@ -51,7 +51,7 @@ return (
           <h2 className="text-xl font-bold mb-2">Card 2</h2>
           <p className="text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, maiores!</p>
         </div>
-        {/* Add more cards here */}
+ 
       </div>
     </section>
     <div className="overflow-hidden">
