@@ -17,7 +17,7 @@ return (
    
   
     <div className="bg-gradient-to-b from-secondary to-transparent opacity-50 absolute inset-0 h-[60vh]"></div>
-    <div className="videoBG">
+
       <div className="absolute inset-0 h-[60vh]">
         <div className="bottom-3 absolute right-3 text-right pl-5">
           <h1 className="text-primary font-bold text-7xl">There Will Be Some</h1>
@@ -26,7 +26,7 @@ return (
       </div>
 
     </div>
-  </div>
+
 
 </section>
 );

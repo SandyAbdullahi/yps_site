@@ -3,6 +3,9 @@ export default {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'card-one': 'url(./Picture13.png)',
+      },
       colors: {
         'primary': '#c22f30',
         'secondary': '#c22f30',

@@ -54,7 +54,9 @@ return (
         {/* Add more cards here */}
       </div>
     </section>
-
+    <div className="overflow-hidden">
+    <VelocityScrollAnimation />
+  </div>
 </motion.div>
 
 );
