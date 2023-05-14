@@ -35,7 +35,7 @@ const navigation = [
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [active, setActive] = useState("");
-    let [isOpen, setIsOpen] = useState(true)
+
 
   return (
       <header className="h-0 inset-x-0 top-0 z-50 sticky">
