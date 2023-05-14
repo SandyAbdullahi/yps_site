@@ -15,7 +15,7 @@ const scale = useTransform(scrollYProgress, [1, 0.5], [0, 1]);
 const  opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
 return (
-<motion.div className='bg-black' initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
+<motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
 
 <motion.div  ref={targetRef} style={{ opacity }}>
   <HeroSection />
@@ -26,8 +26,8 @@ return (
 </motion.div>
 
 
-  <section className="relative services container mx-auto py-8 bg-black w-full">
-    <div className="container px-8 lg:w-full">
+  <section className="services container mx-auto py-8">
+    <div className="container px-8">
       <h1 className='text-accent font-bold text-6xl'>An Array of Services</h1>
       <p className='text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veniam totam blanditiis. Eum eligendi iste facilis alias, atque a rerum sint aut.</p>
     </div>
