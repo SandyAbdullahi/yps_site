@@ -26,7 +26,7 @@ return (
 </motion.div>
 
 
-  <section className="relative z-50 services container mx-auto py-8 bg-black w-full">
+  <section className="relative services container mx-auto py-8 bg-black w-full">
     <div className="container px-8 lg:w-full">
       <h1 className='text-accent font-bold text-6xl'>An Array of Services</h1>
       <p className='text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veniam totam blanditiis. Eum eligendi iste facilis alias, atque a rerum sint aut.</p>
