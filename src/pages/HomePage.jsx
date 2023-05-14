@@ -1,13 +1,26 @@
-import { motion } from 'framer-motion';
+import { useScroll, useTransform, motion } from 'framer-motion'
+import { useRef } from 'react'
+
 import { HeroSection, VelocityScrollAnimation } from '../components';
 
 const HomePage = () => {
+
+const targetRef = useRef(null)
+const { scrollYProgress } = useScroll({
+target: targetRef,
+offset: ["end end", "end start"],
+});
+
+const scale = useTransform(scrollYProgress, [1, 0.5], [0, 1]);
+const  opacity = useTransform(scrollYProgress, [0, 1.5], [1, 0]);
+
 return (
-<motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
+<div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
 
-
-
+<motion.div  ref={targetRef} style={{ scale, opacity }}>
   <HeroSection />
+
+</motion.div>
 
   <div className="overflow-hidden">
     <VelocityScrollAnimation />
@@ -19,22 +32,22 @@ return (
       <p className='text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veniam totam blanditiis. Eum eligendi iste facilis alias, atque a rerum sint aut.</p>
     </div>
   <div className="grid grid-cols-1 gap-8 md:grid-cols-2 m-5">
-        <div className="bg-gray-100 p-4">
+        <div className="bg-gray-100 p-4 h-96">
           <h2 className="text-xl font-bold mb-2">Card 1</h2>
           <p className="text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, maiores!</p>
         </div>
-        <div className="bg-gray-100 p-4">
+        <div className="bg-gray-100 p-4 h-96">
           <h2 className="text-xl font-bold mb-2">Card 2</h2>
           <p className="text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, maiores!</p>
         </div>
         {/* Add more cards here */}
       </div>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 m-5">
-        <div className="bg-gray-100 p-4">
+        <div className="bg-gray-100 p-4 h-96">
           <h2 className="text-xl font-bold mb-2">Card 1</h2>
           <p className="text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, maiores!</p>
         </div>
-        <div className="bg-gray-100 p-4">
+        <div className="bg-gray-100 p-4 h-96">
           <h2 className="text-xl font-bold mb-2">Card 2</h2>
           <p className="text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, maiores!</p>
         </div>
@@ -42,7 +55,7 @@ return (
       </div>
     </section>
 
-</motion.div>
+</div>
 
 );
 }
