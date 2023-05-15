@@ -37,42 +37,42 @@ return (
     </div>
   <div className="grid grid-cols-1 gap-8 md:grid-cols-2 m-5">
   <div className="relative">
-          <div className="h-[80vh] bg-gray-200 relative overflow-hidden">
+          <div className="h-[60vh] bg-gray-200 relative overflow-hidden">
             <div className="absolute inset-0 bg-vampire-black opacity-60"></div>
             <img className="w-full h-full object-cover" src="../cards/docu.png" alt="Card Background" />
           </div>
           <div className="absolute bottom-0 right-0 p-4">
-            <h2 className="text-secondary text-xl font-bold mb-2">Documentary</h2>
+            <h2 className="text-secondary text-4xl font-bold mb-2">Documentary</h2>
             <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, maiores!</p>
           </div>
         </div>
         <div className="relative">
-          <div className="h-[80vh] bg-gray-200 relative overflow-hidden">
+          <div className="h-[60vh] bg-gray-200 relative overflow-hidden">
             <div className="absolute inset-0 bg-vampire-black opacity-60"></div>
             <img className="w-full h-full object-cover" src="../cards/comm.png" alt="Card Background" />
           </div>
           <div className="absolute bottom-0 right-0 p-4">
-            <h2 className="text-secondary text-xl font-bold mb-2">Commercial</h2>
+            <h2 className="text-secondary text-4xl font-bold mb-2">Commercial</h2>
             <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, maiores!</p>
           </div>
         </div>
         <div className="relative">
-          <div className="h-[80vh] bg-gray-200 relative overflow-hidden">
+          <div className="h-[60vh] bg-gray-200 relative overflow-hidden">
             <div className="absolute inset-0 bg-vampire-black opacity-60"></div>
             <img className="w-full h-full object-cover" src="../cards/narr.png" alt="Card Background" />
           </div>
           <div className="absolute bottom-0 right-0 p-4">
-            <h2 className="text-secondary text-xl font-bold mb-2">Narrative</h2>
+            <h2 className="text-secondary text-4xl font-bold mb-2">Narrative</h2>
             <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, maiores!</p>
           </div>
         </div>
         <div className="relative">
-          <div className="h-[80vh] bg-gray-200 relative overflow-hidden">
+          <div className="h-[60vh] bg-gray-200 relative overflow-hidden">
             <div className="absolute inset-0 bg-vampire-black opacity-60"></div>
             <img className="w-full h-full object-cover" src="../cards/film.png" alt="Card Background" />
           </div>
           <div className="absolute bottom-0 right-0 p-4">
-            <h2 className="text-secondary text-xl font-bold mb-2">Production</h2>
+            <h2 className="text-secondary text-4xl font-bold mb-2">Production</h2>
             <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, maiores!</p>
           </div>
         </div>
