@@ -9,7 +9,7 @@ const AboutPage = () => {
     animate={{opacity: 1}}
     exit={{opacity: 0}}
     >
-      <header className="relative w-full bg-about  bg-center  bg-cover h-[80vh]">
+      <header className="relative w-full bg-about  bg-no-repeat bg-[-80vw] bg-cover lg:bg-center h-[80vh]">
       <div className="absolute inset-0 opacity-50 bg-black"></div>
       <div className="flex items-end justify-end h-full opacity-100">
         <div className="p-8 relative z-10">
