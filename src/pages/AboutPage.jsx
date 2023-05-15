@@ -3,6 +3,25 @@ import { motion } from 'framer-motion';
 
 
 const AboutPage = () => {
+  const teamMembers = [
+    {
+      name: 'Shuria Abdi',
+      position: 'Director',
+      image: './team/shuria_abdi.png',
+    },
+    {
+      name: 'Kahiga Muriuki',
+      position: 'Cinematographer',
+      image: './team/kahiga_muriuki.png',
+    },
+    {
+      name: 'Dinah',
+      position: 'Editor',
+      image: './team/dinah.png',
+    },
+  ];
+
+
   return (
     <motion.div
     initial={{opacity: 0}}
@@ -15,14 +34,14 @@ const AboutPage = () => {
         <div className="p-8 relative z-10">
           <div className="flex items-center">
           <div className='bg-secondary h-10 w-5 m-5'></div> 
-          <h1 className="text-8xl font-bold text-white">About Us</h1>
+          <h1 className="text-7xl lg:text-9xl font-bold text-white">About Us</h1>
           </div>
           <p className="text-lg text-white">Learn more about our company and our mission</p>
         </div>
       </div>
     </header>
     <section>
-      <div className="container mx-auto p-10 text-vampire-black">
+      <div className="container grid lg:grid-cols-2 mx-auto p-10 lg:p-20 gap-5 text-vampire-black ">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
           Innovative Storytelling at Yare Picture Studio
         </h2>
@@ -34,27 +53,46 @@ const AboutPage = () => {
     <section className="py-10">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0">
-          <div className="text-white bg-vampire-black p-6">
+          <div className="text-white bg-vampire-black p-10 lg:p-20">
      
             <h3 className="text-xl font-bold mb-2">We are</h3>
-            <p className="text-gray-700">
+            <p className="text-gray-500">
               Yare Picture Studio is a team of passionate filmmakers dedicated to pushing the boundaries of storytelling through film. We strive to create captivating visuals and compelling narratives that leave a lasting impact on our audiences.
             </p>
           </div>
-          <div className="text-white bg-gray-900 p-6">
+          <div className="text-white bg-slate-900 p-10 lg:p-20">
 
             <h3 className="text-xl font-bold mb-2">We are not</h3>
-            <p className="text-gray-700">
+            <p className="text-gray-500">
               We are not your average production studio. We believe in taking risks, challenging conventions, and thinking outside the box. We embrace innovation, creativity, and the pursuit of excellence to deliver exceptional results.
             </p>
           </div>
-          <div className="text-white bg-vampire-black p-6">
+          <div className="text-white bg-vampire-black p-10 lg:p-20">
      
             <h3 className="text-xl font-bold mb-2">What We Do</h3>
-            <p className="text-gray-700">
+            <p className="text-gray-500">
               At Yare Picture Studio, we specialize in various aspects of film production, including concept development, scriptwriting, cinematography, editing, and post-production. We offer end-to-end services to bring your vision to life and create captivating films that resonate with audiences.
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+    <section className="py-10">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {teamMembers.map((member, index) => (
+            <div key={index} className="text-white bg-vampire-black p-6">
+              <div className="flex justify-center">
+                <img
+                  className="w-full h-auto max-h-64 object-cover"
+                  src={member.image}
+                  alt={member.name}
+                />
+              </div>
+              <h3 className="text-xl font-bold my-4">{member.name}</h3>
+              <p className="text-gray-700">{member.position}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

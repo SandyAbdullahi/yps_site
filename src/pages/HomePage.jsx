@@ -19,17 +19,20 @@ return (
 
 <motion.div  ref={targetRef} style={{ opacity }}>
   <HeroSection />
+</motion.div>
+
+
 <hr />
   <div className="overflow-hidden">
     <VelocityScrollAnimation />
   </div>
   <hr />
-</motion.div>
+
 
 
   <section className="services container mx-auto py-8">
     <div className="container px-8">
-      <h1 className='text-vampire-black font-bold text-5xl'>An Array of Services</h1>
+      <h1 className='text-vampire-black font-bold text-6xl'>An Array of Services</h1>
       <p className='text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veniam totam blanditiis. Eum eligendi iste facilis alias, atque a rerum sint aut.</p>
     </div>
   <div className="grid grid-cols-1 gap-8 md:grid-cols-2 m-5">
