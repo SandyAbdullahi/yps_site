@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'card-one': 'url(./Picture13.png)',
+
+        'about': 'url(./Roof_top_noise.png)',
       },
       colors: {
         'primary': '#c22f30',

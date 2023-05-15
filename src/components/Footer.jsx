@@ -9,17 +9,24 @@ const Footer =  () => {
                     <h1 className='text-2xl'>GET IN TOUCH TODAY</h1>
                     <button className='rounded-full bg-transparent border-white border-2 px-6 m-5'>Email</button>
                 </div>
-                <hr />
-            <div className="container">
-                       <ul className='leading-0'>
+            <div className="container lg:border-l-8">
+                <hr className='lg:hidden'/>
+                       <ul className='leading-0 py-4'>
                         <li>HOME</li>
                         <li>ABOUT</li>
                         <li>SERVICES</li>
                         <li>FEATURES</li>
                     </ul>
+                <div className="lg:hidden px-6 ">
+                <hr className='w-full my-5'/>
                     <h2> &copy; DESIGN BY ABDULLAHI FOR YPS</h2>
+                </div>
             </div>
               </div>
+            <div className="px-6 text-center py-6 hidden">
+                <hr className='w-full my-5'/>
+                    <h2> &copy; DESIGN BY ABDULLAHI FOR YPS</h2>
+                </div>
         </footer>
     )
 }
