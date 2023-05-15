@@ -5,7 +5,7 @@ export default {
     extend: {
       backgroundImage: {
 
-        'about': 'url(./Roof_top_noise.png)',
+        'about': 'url(../assets/Roof_top_noise.png)',
       },
       colors: {
         'primary': '#c22f30',
