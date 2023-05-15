@@ -75,6 +75,40 @@ return (
 
       </div>
     </section>
+    <hr />
+    <section className="container mx-auto py-8">
+    <div className="container px-8">
+      <h1 className='text-accent font-bold text-5xl'>An Array of Partners</h1>
+
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-2 gap-8 px-8">
+        <div className="partner p-2">
+          <img src="./logo/dummy_logo.png" alt="Partner Logo" className="w-full h-auto" />
+        </div>
+        <div className="partner p-2">
+        <img src="./logo/dummy_logo.png" alt="Partner Logo" className="w-full h-auto" />
+        </div>
+        <div className="partner p-2">
+          <img src="./logo/dummy_logo.png" alt="Partner Logo" className="w-full h-auto" />
+        </div>
+        <div className="partner p-2">
+        <img src="./logo/dummy_logo.png" alt="Partner Logo" className="w-full h-auto" />
+        </div>
+        <div className="partner p-2">
+          <img src="./logo/dummy_logo.png" alt="Partner Logo" className="w-full h-auto" />
+        </div>
+        <div className="partner p-2">
+        <img src="./logo/dummy_logo.png" alt="Partner Logo" className="w-full h-auto" />
+        </div>
+        <div className="partner p-2">
+          <img src="./logo/dummy_logo.png" alt="Partner Logo" className="w-full h-auto" />
+        </div>
+        <div className="partner p-2">
+        <img src="./logo/dummy_logo.png" alt="Partner Logo" className="w-full h-auto" />
+        </div>
+
+      </div>
+    </section>
     <div className="overflow-hidden">
     <VelocityScrollAnimation />
   </div>
