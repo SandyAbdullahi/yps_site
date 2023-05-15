@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer =  () => {
     return (
-        <footer className='h-full bg-accent container'>
+        <footer className='h-full bg-vampire-black text-accent container'>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-10 text-center">
                 <div className="row uppercase leading-10">
                     <h2 className='font-bold'>yarepicturestudios@gmail.com</h2>

@@ -10,7 +10,7 @@ return (
 
 
   <div className="h-full">
-    <video className='w-full h-[80vh] object-cover hidden' src="./YPS_BACKGROUND.webm" autoPlay={true} loop={true} muted={true} playsInline={true}></video>
+    <video className='w-full h-[80vh] lg:object-cover hidden lg:block' src="./YPS_BACKGROUND.webm" autoPlay={true} loop={true} muted={true} playsInline={true}></video>
   
     
     <img className="w-full h-full object-cover lg:hidden"   src="./YPS_BACKGROUND.gif" alt="" />
