@@ -63,7 +63,7 @@ const Header = () => {
           </div>
           <div className="hidden lg:flex lg:justify-center  lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={`${item.href}`} className={`${active === item.name ? "text-white" : "text-black"} hover:text-red-400 active:text-white`}  onClick={() => setActive(item.name)}>
+              <a key={item.name} href={`${item.href}`} className={`${active === item.name ? "text-accent" : "text-white"} hover:text-red-400 active:text-white font-bold`}  onClick={() => setActive(item.name)}>
                 {item.name}
               </a>
             ))}
