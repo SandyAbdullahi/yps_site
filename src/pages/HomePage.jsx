@@ -19,10 +19,11 @@ return (
 
 <motion.div  ref={targetRef} style={{ opacity }}>
   <HeroSection />
-
+<hr />
   <div className="overflow-hidden">
     <VelocityScrollAnimation />
   </div>
+  <hr />
 </motion.div>
 
 
@@ -83,7 +84,7 @@ return (
       </div>
       <div className="grid grid-cols-2 md:grid-cols-2 gap-8 px-8">
         <div className="partner p-2">
-          <img src="./logo/dummy_logo.png" alt="Partner Logo" className="w-full h-auto" />
+          <img src="./logo/dummy_logo.png" alt="Partner Logo w-10" className="w-full h-auto" />
         </div>
         <div className="partner p-2">
         <img src="./logo/dummy_logo.png" alt="Partner Logo" className="w-full h-auto" />
@@ -109,9 +110,11 @@ return (
 
       </div>
     </section>
+    <hr />
     <div className="overflow-hidden">
     <VelocityScrollAnimation />
   </div>
+  <hr />
 </motion.div>
 
 );
