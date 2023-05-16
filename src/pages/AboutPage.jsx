@@ -53,21 +53,21 @@ const AboutPage = () => {
     <section className="py-10">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0">
-          <div className="text-white bg-vampire-black p-10 lg:p-20">
+          <div className="text-white bg-vampire-black p-10 lg:p-20 border-2 border-accent shadow-lg drop-shadow-2xl">
      
             <h3 className="text-xl font-bold mb-2">We are</h3>
             <p className="text-gray-500">
               Yare Picture Studio is a team of passionate filmmakers dedicated to pushing the boundaries of storytelling through film. We strive to create captivating visuals and compelling narratives that leave a lasting impact on our audiences.
             </p>
           </div>
-          <div className="text-white bg-slate-900 p-10 lg:p-20">
+          <div className="text-white  p-10 lg:p-20 border-2 border-accent shadow-lg drop-shadow-2xl">
 
             <h3 className="text-xl font-bold mb-2">We are not</h3>
             <p className="text-gray-500">
               We are not your average production studio. We believe in taking risks, challenging conventions, and thinking outside the box. We embrace innovation, creativity, and the pursuit of excellence to deliver exceptional results.
             </p>
           </div>
-          <div className="text-white bg-vampire-black p-10 lg:p-20">
+          <div className="text-white bg-vampire-black p-10 lg:p-20 border-2 border-accent shadow-lg drop-shadow-2xl">
      
             <h3 className="text-xl font-bold mb-2">What We Do</h3>
             <p className="text-gray-500">
@@ -96,6 +96,10 @@ const AboutPage = () => {
         </div>
       </div>
     </section>
+    <section className='bg-vampire-black h-full text-white p-10 font-bold leading-none'>
+      <h3>With an unwavering dedication to delivering exceptional quality workmanship, we pride ourselves on setting the highest standards in everything we do. From meticulous attention to detail to utilizing the latest technologies, we go above and beyond to ensure that every project we undertake exceeds expectations</h3>
+    </section>
+    <hr />
     </motion.div>
   );
 };
