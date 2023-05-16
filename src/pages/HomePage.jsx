@@ -149,7 +149,7 @@ return (
               alt="Large Image"
             />
             <motion.img
-              className="h-[20vh] relative -top-[10vh]"
+              className="h-[25vh] relative -top-[10vh]"
               src="./home_bottom_accent.png"
               alt="Large Image"
               ref={targetRef}
