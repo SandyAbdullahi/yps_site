@@ -5,13 +5,13 @@ import { HeroSection, VelocityScrollAnimation } from '../components';
 
 const HomePage = () => {
 
-// const targetRef = useRef(null)
-// const { scrollYProgress } = useScroll({
-// target: targetRef,
-// offset: ["end end", "end start"],
-// });
+const targetRef = useRef(null)
+const { scrollYProgress } = useScroll({
+target: targetRef,
+offset: ["end end", "end start"],
+});
 
-// const  opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+const y = useTransform(scrollYProgress, [0, 1], [0, -100]);
 
 return (
 <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
@@ -148,8 +148,17 @@ return (
               src="./home_bottom.png"
               alt="Large Image"
             />
+            <motion.img
+              className="h-[20vh] relative -top-[10vh]"
+              src="./home_bottom_accent.png"
+              alt="Large Image"
+              ref={targetRef}
+              style={{ y: y }}
+              
+            />
+            
           </div>
-          <div className="flex flex-col justify-center mt-9">
+          <div className="flex flex-col justify-center -mt-20">
             <p className="text-lg sm:text-xl lg:text-2xl leading-relaxed">
               Yare Picture Studio stands out as the perfect choice for your film production needs. With our team of young and talented professionals, we bring a fresh and innovative approach to every project. From concept development to post-production, we are committed to delivering exceptional quality and attention to detail. Our passion for storytelling and dedication to excellence make us the right partner to bring your vision to life.
             </p>
