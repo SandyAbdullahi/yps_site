@@ -79,9 +79,9 @@ return (
       </div>
     </section>
     <hr />
-    <section className="container mx-auto py-8">
+    <section className="container mx-auto py-8 bg-secondary">
     <div className="container p-8">
-      <h1 className='text-vampire-black font-bold text-5xl'>An Array of Partners</h1>
+      <h1 className='text-vampire-black font-bold text-5xl leading-[2.5rem]'>A Few of Our Partners</h1>
 
       </div>
       <div className="grid grid-cols-2 lg:flex gap-8 px-8">
@@ -95,19 +95,40 @@ return (
           <img src="./logo/HAART.png" alt="Partner Logo" className="w-full h-auto" />
         </div>
         <div className="partner p-2">
-        <img src="./logo/dummy_logo.png" alt="Partner Logo" className="w-full h-auto" />
+        <img src="./logo/RefuSHE.png" alt="Partner Logo" className="w-full h-auto" />
         </div>
         <div className="partner p-2">
-          <img src="./logo/dummy_logo.png" alt="Partner Logo" className="w-full h-auto" />
+          <img src="./logo/VMLY&R_Logo.png" alt="Partner Logo" className="w-full h-auto" />
         </div>
         <div className="partner p-2">
-        <img src="./logo/dummy_logo.png" alt="Partner Logo" className="w-full h-auto" />
+        <img src="./logo/ramco.png" alt="Partner Logo" className="w-full h-auto" />
         </div>
         <div className="partner p-2">
-          <img src="./logo/dummy_logo.png" alt="Partner Logo" className="w-full h-auto" />
+          <img src="./logo/vpGroup.png" alt="Partner Logo" className="w-full h-auto" />
         </div>
         <div className="partner p-2">
-        <img src="./logo/dummy_logo.png" alt="Partner Logo" className="w-full h-auto" />
+        <img src="./logo/alexanderForbes.png" alt="Partner Logo" className="w-full h-auto" />
+        </div>
+        <div className="partner p-2">
+        <img src="./logo/bidco-africa.png" alt="Partner Logo" className="w-full h-auto" />
+        </div>
+        <div className="partner p-2">
+        <img src="./logo/computerAid.png" alt="Partner Logo" className="w-full h-auto" />
+        </div>
+        <div className="partner p-2">
+        <img src="./logo/crownPaints.png" alt="Partner Logo" className="w-full h-auto" />
+        </div>
+        <div className="partner p-2">
+        <img src="./logo/I&M_Bank.png" alt="Partner Logo" className="w-full h-auto" />
+        </div>
+        <div className="partner p-2">
+        <img src="./logo/Intel.png" alt="Partner Logo" className="w-full h-auto" />
+        </div>
+        <div className="partner p-2">
+        <img src="./logo/SCANAD.png" alt="Partner Logo" className="w-full h-auto" />
+        </div>
+        <div className="partner p-2">
+        <img src="./logo/showmax.png" alt="Partner Logo" className="w-full h-auto" />
         </div>
 
       </div>
