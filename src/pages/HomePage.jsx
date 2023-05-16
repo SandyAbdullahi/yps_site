@@ -16,9 +16,9 @@ const HomePage = () => {
 return (
 <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
 
-<motion.div >
+
   <HeroSection />
-</motion.div>
+
 
 
 <hr />
@@ -79,7 +79,7 @@ return (
       </div>
     </section>
     <hr />
-    <section className="container mx-auto py-8 bg-secondary">
+    <section className="container mx-auto py-8 bg-[#7e1f1f]">
     <div className="container p-8">
       <h1 className='text-vampire-black font-bold text-5xl leading-[2.5rem]'>A Few of Our Partners</h1>
 
