@@ -86,13 +86,13 @@ return (
       </div>
       <div className="grid grid-cols-2 lg:flex gap-8 px-8">
         <div className="partner p-2">
-          <img src="./logo/dummy_logo.png" alt="Partner Logo w-10" className="w-full h-auto" />
+          <img src="./logo/safaricom.png" alt="Partner Logo w-10" className="w-full h-auto" />
         </div>
         <div className="partner p-2">
-        <img src="./logo/dummy_logo.png" alt="Partner Logo" className="w-full h-auto" />
+        <img src="./logo/Unilever-Symbol.png" alt="Partner Logo" className="w-full h-auto" />
         </div>
         <div className="partner p-2">
-          <img src="./logo/dummy_logo.png" alt="Partner Logo" className="w-full h-auto" />
+          <img src="./logo/HAART.png" alt="Partner Logo" className="w-full h-auto" />
         </div>
         <div className="partner p-2">
         <img src="./logo/dummy_logo.png" alt="Partner Logo" className="w-full h-auto" />

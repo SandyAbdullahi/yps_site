@@ -4,7 +4,9 @@ const Footer =  () => {
     return (
         <footer className='h-full bg-vampire-black text-accent w-full'>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-10 text-center">
-                <img src="./logo.svg" alt="" />
+            <div className="flex items-center justify-center ">
+            <img src="./logo.svg" className='w-[35%]' alt="" />
+            </div>
                 <div className="uppercase leading-10">
                     <h2 className='font-bold'>yarepicturestudios@gmail.com</h2>
                     <h1 className='text-2xl'>GET IN TOUCH TODAY</h1>
