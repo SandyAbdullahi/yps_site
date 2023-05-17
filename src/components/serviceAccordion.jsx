@@ -5,7 +5,7 @@ import {
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const ServicesAccordion = () => {
     const [open, setOpen] = useState(1);
@@ -28,14 +28,19 @@ const ServicesAccordion = () => {
           </div>
                     </AccordionHeader>
                     <AccordionBody>
+                    
                     <motion.div className="grid grid-cols-2 gap-0 px-2 max-h-96"
                     initial={{width: 0, opacity: 0}}
                     transition={{delay: 0}}
                     whileInView={{width: "100%", opacity: 1}}
-                    exit={{width: 0, opacity: 0}}
+                    exit={{ width: 0, opacity: 0, transition: { duration: 0.5, ease: "easeInOut",  staggerChildren: 0.3  } }}
                     >
-                        <p className='text-white'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora suscipit impedit reiciendis nobis corporis illum itaque recusandae, eum at blanditiis amet voluptatum quo! Consectetur ullam ex officiis et est!</p>
-                        <img src="./Picture13.png" alt="" className='object-cover h-96' />
+                        <motion.p className='text-white'
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        transition={{delay: 0.3, ease: "easeInOut"}}
+                        >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora suscipit impedit reiciendis nobis corporis illum itaque recusandae, eum at blanditiis amet voluptatum quo! Consectetur ullam ex officiis et est!</motion.p>
+                        <img src="./Picture13.png" alt="" className='absoulte object-cover h-96 w-full' />
                     </motion.div>
                     </AccordionBody>
                   </Accordion>
@@ -68,7 +73,7 @@ const ServicesAccordion = () => {
                     initial={{width: 0, opacity: 0}}
                     transition={{delay: 0}}
                     whileInView={{width: "100%", opacity: 1}}
-                    exit={{width: 0, opacity: 0}}
+                    exit={{width: 1, opacity: 1}}
                     >
                         <p className='text-white'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora suscipit impedit reiciendis nobis corporis illum itaque recusandae, eum at blanditiis amet voluptatum quo! Consectetur ullam ex officiis et est!</p>
                         <img src="./Picture13.png" alt="" className='object-cover h-96' />
