@@ -44,7 +44,7 @@ const ScrollingHeader = () => {
         variants={marqueeVariants}
         animate="animate"
       >
-        <h1 className='text-9xl m-20 uppercase'>what we do X what we do X what we do</h1>
+        <h1 className='text-9xl m-20 uppercase'>what we do &#9900; what we do &#9900; what we do &#9900; what we do &#9900;</h1>
       </motion.div>
     </div>
   </motion.div>
