@@ -14,7 +14,7 @@ const ServicesAccordion = () => {
     };
    
     return (
-        <section className='h-screen bg-vampire-black text-white'>
+        <section className='h-full bg-vampire-black text-white'>
         <div className="p-10">
         <h2 className='text-6xl uppercase '>Services Worth Your <br /> Time &#174;</h2>
         </div>
