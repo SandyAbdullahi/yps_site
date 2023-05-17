@@ -42,9 +42,12 @@ const AboutPage = () => {
     </header>
     <section>
       <div className="container grid lg:grid-cols-2 mx-auto p-10 lg:p-20 gap-5 text-vampire-black ">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+        <div className="flex items-center justify-center">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold ">
           Innovative Storytelling at Yare Picture Studio
         </h2>
+           <div className='bg-secondary h-[20vh] w-5'></div> 
+        </div>
         <p className="text-lg sm:text-xl lg:text-2xl leading-relaxed">
           Yare Picture Studio is a dynamic and innovative film production company based in Kenya. With a team of young and talented individuals, we are dedicated to bringing stories to life through the power of visual storytelling. From concept development to post-production, we handle every aspect of the filmmaking process with creativity, passion, and meticulous attention to detail.
         </p>
@@ -78,13 +81,18 @@ const AboutPage = () => {
       </div>
     </section>
     <section className="py-10">
+      <div className="flex items-end justify-center h-full my-5">
+        <div className="relative bg-primary h-9 w-5 m-2"></div>
+        <h1 className='font-bold text-vampire-black text-center text-5xl'>The Crew</h1>
+       
+      </div>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {teamMembers.map((member, index) => (
             <div key={index} className="text-white bg-vampire-black p-6">
               <div className="flex justify-center">
                 <img
-                  className="w-full h-auto max-h-64 object-cover"
+                  className="w-full h-full max-h-96 object-cover"
                   src={member.image}
                   alt={member.name}
                 />
@@ -96,8 +104,9 @@ const AboutPage = () => {
         </div>
       </div>
     </section>
-    <section className='bg-vampire-black h-full text-white p-10 font-bold leading-none'>
-      <h3>With an unwavering dedication to delivering exceptional quality workmanship, we pride ourselves on setting the highest standards in everything we do. From meticulous attention to detail to utilizing the latest technologies, we go above and beyond to ensure that every project we undertake exceeds expectations</h3>
+    <section className='bg-vampire-black h-full text-white font-bold leading-none'>
+      <img src="./team/team.png" alt="team" className='object-cover w-full my-10 h-[30vh] inset-0' />
+      <h3 className='p-10'>With an unwavering dedication to delivering exceptional quality workmanship, we pride ourselves on setting the highest standards in everything we do. From meticulous attention to detail to utilizing the latest technologies, we go above and beyond to ensure that every project we undertake exceeds expectations</h3>
     </section>
     <hr />
     </motion.div>
