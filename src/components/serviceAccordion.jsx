@@ -5,6 +5,7 @@ import {
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
+import { motion } from "framer-motion";
 
 const ServicesAccordion = () => {
     const [open, setOpen] = useState(1);
@@ -27,10 +28,15 @@ const ServicesAccordion = () => {
           </div>
                     </AccordionHeader>
                     <AccordionBody>
-                        <p className='text-white'>    We&apos;re not always in the position that we want to be at.
-                      We&apos;re constantly growing. We&apos;re constantly making mistakes.
-                      We&apos;re constantly trying to express ourselves and actualize our
-                      dreams.</p>
+                    <motion.div className="grid grid-cols-2 gap-0 px-2 max-h-96"
+                    initial={{width: 0, opacity: 0}}
+                    transition={{delay: 0}}
+                    whileInView={{width: "100%", opacity: 1}}
+                    exit={{width: 0, opacity: 0}}
+                    >
+                        <p className='text-white'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora suscipit impedit reiciendis nobis corporis illum itaque recusandae, eum at blanditiis amet voluptatum quo! Consectetur ullam ex officiis et est!</p>
+                        <img src="./Picture13.png" alt="" className='object-cover h-96' />
+                    </motion.div>
                     </AccordionBody>
                   </Accordion>
                   <Accordion open={open === 2}>
@@ -40,10 +46,15 @@ const ServicesAccordion = () => {
           </div>
                     </AccordionHeader>
                     <AccordionBody>
-                      We&apos;re not always in the position that we want to be at.
-                      We&apos;re constantly growing. We&apos;re constantly making mistakes.
-                      We&apos;re constantly trying to express ourselves and actualize our
-                      dreams.
+                    <motion.div className="grid grid-cols-2 gap-0 px-2 max-h-96"
+                    initial={{width: 0, opacity: 0}}
+                    transition={{delay: 0}}
+                    whileInView={{width: "100%", opacity: 1}}
+                    exit={{width: 0, opacity: 0}}
+                    >
+                        <p className='text-white'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora suscipit impedit reiciendis nobis corporis illum itaque recusandae, eum at blanditiis amet voluptatum quo! Consectetur ullam ex officiis et est!</p>
+                        <img src="./Picture13.png" alt="" className='object-cover h-96' />
+                    </motion.div>
                     </AccordionBody>
                   </Accordion>
                   <Accordion open={open === 3}>
@@ -53,10 +64,15 @@ const ServicesAccordion = () => {
           </div>
                     </AccordionHeader>
                     <AccordionBody>
-                      We&apos;re not always in the position that we want to be at.
-                      We&apos;re constantly growing. We&apos;re constantly making mistakes.
-                      We&apos;re constantly trying to express ourselves and actualize our
-                      dreams.
+                    <motion.div className="grid grid-cols-2 gap-0 px-2 max-h-96"
+                    initial={{width: 0, opacity: 0}}
+                    transition={{delay: 0}}
+                    whileInView={{width: "100%", opacity: 1}}
+                    exit={{width: 0, opacity: 0}}
+                    >
+                        <p className='text-white'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora suscipit impedit reiciendis nobis corporis illum itaque recusandae, eum at blanditiis amet voluptatum quo! Consectetur ullam ex officiis et est!</p>
+                        <img src="./Picture13.png" alt="" className='object-cover h-96' />
+                    </motion.div>
                     </AccordionBody>
                   </Accordion>
                   <Accordion open={open === 4}>
@@ -66,10 +82,15 @@ const ServicesAccordion = () => {
           </div>
                     </AccordionHeader>
                     <AccordionBody>
-                      We&apos;re not always in the position that we want to be at.
-                      We&apos;re constantly growing. We&apos;re constantly making mistakes.
-                      We&apos;re constantly trying to express ourselves and actualize our
-                      dreams.
+                    <motion.div className="grid grid-cols-2 gap-0 px-2 max-h-96"
+                    initial={{width: 0, opacity: 0}}
+                    transition={{delay: 0}}
+                    whileInView={{width: "100%", opacity: 1}}
+                    exit={{width: 0, opacity: 0}}
+                    >
+                        <p className='text-white'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora suscipit impedit reiciendis nobis corporis illum itaque recusandae, eum at blanditiis amet voluptatum quo! Consectetur ullam ex officiis et est!</p>
+                        <img src="./Picture13.png" alt="" className='object-cover h-96' />
+                    </motion.div>
                     </AccordionBody>
                   </Accordion>
                 </Fragment>
