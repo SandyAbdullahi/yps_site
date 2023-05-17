@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import '../styles/marquee.css';
+import { ServicesAccordion } from '../components';
 
 
 const marqueeVariants = {
@@ -20,8 +21,22 @@ const marqueeVariants = {
 
 
 const ScrollingHeader = () => {
+
+  const visible = { opacity: 1, y: 0, transition: { duration: 0.5 } };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 10 },
+    visible
+  };
+
+
   return (
-    <div>
+    <motion.div
+    initial="hidden"
+    animate="visible"
+    exit={{ opacity: 0, transition: { duration: 1 } }}
+    variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
+    >
     <div className="overflow-hidden w-full relative h-96 -mb-36">
       {/* 3. Using framer motion */}
       <motion.div
@@ -32,7 +47,7 @@ const ScrollingHeader = () => {
         <h1 className='text-9xl m-20 uppercase'>what we do X what we do X what we do</h1>
       </motion.div>
     </div>
-  </div>
+  </motion.div>
   )
 }
 
@@ -60,25 +75,10 @@ const ServicesPage = () => {
        </div>
 
     </header>
-    <section className='h-screen bg-vampire-black text-white'>
-      <div className="p-10">
-      <h2 className='text-6xl uppercase '>Services Worth Your <br /> Time &#174;</h2>
-      </div>
-      <div className="service-dropdowns">
-        <div className="border-y-2 p-5">
-          <h1 className='text-4xl'>DOCUMENTARY</h1>
-        </div>
-        <div className="border-y-2 p-5">
-          <h1 className='text-4xl'>COMMERCIAL</h1>
-        </div>
-        <div className="border-y-2 p-5">
-          <h1 className='text-4xl'>NARRATIVE</h1>
-        </div>
-        <div className="border-y-2 p-5">
-          <h1 className='text-4xl'>PRODUCTION</h1>
-        </div>
-      </div>
-    </section>
+    <div className="">
+    <ServicesAccordion />
+    </div>
+    <hr />
     </motion.div>
   );
 };

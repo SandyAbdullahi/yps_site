@@ -16,7 +16,7 @@ return (
     <img className="w-full h-full object-cover lg:hidden"   src="./YPS_BACKGROUND.gif" alt="" />
    
   
-    <div className="bg-gradient-to-b from-secondary to-vampire-black opacity-50 absolute inset-0 h-[60vh]"></div>
+    <div className="bg-gradient-to-b from-secondary to-vampire-black opacity-50 absolute inset-0 h-[60vh] lg:h-[80vh]"></div>
 
       <div className="absolute inset-0 h-[60vh] lg:h-[80vh] z-20">
         <div className="bottom-3 absolute right-3 text-right pl-5 max-w-4xl">

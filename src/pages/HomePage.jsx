@@ -4,6 +4,12 @@ import { useRef } from 'react'
 import { HeroSection, VelocityScrollAnimation } from '../components';
 
 const HomePage = () => {
+  const visible = { opacity: 1, y: 0, transition: { duration: 0.5 } };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 10 },
+    visible
+  };
 
 const targetRef = useRef(null)
 const { scrollYProgress } = useScroll({
@@ -14,7 +20,12 @@ offset: ["end end", "end start"],
 const y = useTransform(scrollYProgress, [0, 1], [0, -100]);
 
 return (
-<motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
+<motion.div 
+   initial="hidden"
+   animate="visible"
+   exit={{ opacity: 0, transition: { duration: 1 } }}
+   variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
+>
 
 
   <HeroSection />
