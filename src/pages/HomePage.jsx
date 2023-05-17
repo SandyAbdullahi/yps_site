@@ -15,7 +15,7 @@ const y = useTransform(scrollYProgress, [0, 1], [0, -100]);
 
 return (
 <motion.div 
- initial={{ y: 300, opacity: 0 }}
+ initial={{ y: 600, opacity: 0 }}
  animate={{ y: 0, opacity: 1 }}
  exit={{ x: 300, opacity: 0 }}
  transition={{

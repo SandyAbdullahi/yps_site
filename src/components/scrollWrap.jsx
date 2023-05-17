@@ -5,7 +5,7 @@ const VelocityScrollAnimation = () => {
     const { scrollYProgress } = useScroll();
     const x = useTransform(scrollYProgress, [0, 1],  [0, -600]);
     return (
-        <motion.div className="flex flex-col p-8 parallax-text bg-vampire-black text-white overflow-hidden relative z-10" 
+        <motion.div className="flex flex-col p-8 parallax-text bg-vampire-black text-white overflow-hidden relative z-50" 
            
         >
             <motion.h1 className="text-2xl whitespace-nowrap text-left font-bold"
