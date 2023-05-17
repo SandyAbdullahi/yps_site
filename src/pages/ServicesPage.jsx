@@ -22,7 +22,7 @@ const marqueeVariants = {
 const ScrollingHeader = () => {
   return (
     <div>
-    <div className="overflow-hidden w-full relative h-96 -mb-48">
+    <div className="overflow-hidden w-full relative h-96 -mb-36">
       {/* 3. Using framer motion */}
       <motion.div
         className="track"
@@ -49,7 +49,7 @@ const ServicesPage = () => {
 
       <div className="container mx-auto">
       <ScrollingHeader />
-        <p className="text-2xl p-5">
+        <p className="text-[1.8rem] p-5">
         At Yare Picture Studio, we are passionate about bringing your vision to life through high-quality film production. With our team of young and talented professionals, we provide innovative and creative solutions for your film projects. 
         </p>
       </div>
@@ -62,7 +62,7 @@ const ServicesPage = () => {
     </header>
     <section className='h-screen bg-vampire-black text-white'>
       <div className="p-10">
-      <h2 className='text-6xl uppercase '>Services Worth Your Time &#174;</h2>
+      <h2 className='text-6xl uppercase '>Services Worth Your <br /> Time &#174;</h2>
       </div>
       <div className="service-dropdowns">
         <div className="border-y-2 p-5">
