@@ -32,10 +32,10 @@ const ScrollingHeader = () => {
 
   return (
     <motion.div
-    initial="hidden"
-    animate="visible"
-    exit={{ opacity: 0, transition: { duration: 1 } }}
-    variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 1 }}
     >
     <div className="overflow-hidden w-full relative h-96 -mb-36">
       {/* 3. Using framer motion */}
@@ -56,9 +56,10 @@ const ScrollingHeader = () => {
 const ServicesPage = () => {
   return (
     <motion.div
-    initial={{opacity: 0}}
-    animate={{opacity: 1}}
-    exit={{opacity: 0}}
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 1 }}
     >
        <header className="h-screen bg-vampire-black text-white py-10">
 
