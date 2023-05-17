@@ -6,6 +6,7 @@ export default {
       backgroundImage: {
 
         'about': 'url(../assets/Roof_top_noise.png)',
+        'services': 'url(../assets/services.png)',
       },
       colors: {
         'primary': '#c22f30',

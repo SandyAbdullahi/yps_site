@@ -1,0 +1,16 @@
+.marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+  
+    overflow-x: hidden;
+  }
+  
+  .track {
+    position: absolute;
+    white-space: nowrap;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  
+
+
