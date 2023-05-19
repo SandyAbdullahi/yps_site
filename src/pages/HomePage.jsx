@@ -23,7 +23,7 @@ return (
  
 
   <HeroSection />
-  <div className="flex -mt-2">
+  <div className="flex -mt-20">
   <video className='object-fit' src="./YPS_BACKGROUND.webm" autoPlay={true} playsInline={true} muted={true} loop={true}></video>
   </div>
 <div className="flex items-center justify-center my-10">
