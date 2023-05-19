@@ -20,12 +20,16 @@ return (
  }}
 
 >
-  <div className='luxy-el h-min-[100%]'>
+ 
 
   <HeroSection />
-  <div className="h-screen bg-primary"></div>
-  <div className="h-screen bg-accent"></div>
+  <div className="flex -mt-2">
+  <video className='object-fit' src="./YPS_BACKGROUND.webm" autoPlay={true} playsInline={true} muted={true} loop={true}></video>
   </div>
+<div className="flex items-center justify-center my-10">
+<h2 className='text-center text-primary font-light w-[90%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus qui commodi dolorum suscipit</h2>
+</div>
+  <section className='h-screen'></section>
   
 
   <hr />
