@@ -24,7 +24,7 @@ return (
 
   <HeroSection />
   <div className="flex -mt-20">
-  <video className='object-fit' src="./YPS_BACKGROUND.webm" autoPlay={true} playsInline={true} muted={true} loop={true}></video>
+  <video className='object-fit' src="./YPS_BACKGROUND.webm" poster='./YPS_BACKGROUND.gif' autoPlay={true} playsInline={true} muted={true} loop={true}></video>
   </div>
 <div className="flex items-center justify-center my-10">
 <h2 className='text-center text-primary font-light w-[90%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus qui commodi dolorum suscipit</h2>
