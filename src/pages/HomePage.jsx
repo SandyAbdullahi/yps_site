@@ -29,7 +29,14 @@ return (
 <div className="flex items-center justify-center my-10">
 <h2 className='text-center text-primary font-light w-[90%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus qui commodi dolorum suscipit</h2>
 </div>
-  <section className='h-screen'></section>
+  <section className='h-screen mt-52'>
+    <div className="text-primary ">
+
+    <h1 className='text-7xl w-80 px-10'>We Bring To Life Visions</h1>
+    <p className='px-10 text-[0.9rem] font-light mt-20'>Collaborations that create masterpieaces.</p>
+
+    </div>
+  </section>
   
 
   <hr />
