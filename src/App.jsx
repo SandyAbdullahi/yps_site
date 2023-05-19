@@ -9,15 +9,15 @@ function App() {
   return (
     <Router>
       <Header />
-      <Switch>
       <AnimatePresence mode='wait'>
+      <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/services" component={ServicesPage} />
         <Route path="/features" component={FeaturesPage} />
         <Route path="/contact" component={ContactPage} />
-    </AnimatePresence>
       </Switch>
+    </AnimatePresence>
       <Footer />
     </Router>
 

@@ -3,7 +3,7 @@
 
 body {
     font-family: 'nexa';
-    background-color: #3f3e40;
+    background-color: #040707;
 }
 
 .parallax-text {
@@ -13,4 +13,17 @@ body {
 .videoBG {
     background: url(./YPS_BACKGROUND.webm) no-repeat center center fixed;
     background-size: cover;
+  }
+
+#luxy {
+    position: fixed  !important;
+}
+
+  footer {
+  
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* Other styles for your footer */
+    z-index: -2;
   }

@@ -1,7 +1,8 @@
 import { useScroll, useTransform, motion } from 'framer-motion'
-import { useRef } from 'react'
+import { useRef, useEffect } from 'react'
 
 import { HeroSection, VelocityScrollAnimation } from '../components';
+
 
 const HomePage = () => {
 
@@ -17,10 +18,15 @@ return (
    stiffness: 260,
    damping: 20,
  }}
->
 
+>
+  <div className='luxy-el h-min-[100%]'>
 
   <HeroSection />
+  <div className="h-screen bg-primary"></div>
+  <div className="h-screen bg-accent"></div>
+  </div>
+  
 
   <hr />
 </motion.div>

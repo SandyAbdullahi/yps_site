@@ -5,66 +5,15 @@ import { motion } from 'framer-motion';
 const HeroSection = () => {
 
 return (
-<section className="h-[60vh] lg:h-[80vh]">
-
-
-
-  <div className="h-full">
-    <video className='w-full h-[80vh] lg:object-cover hidden lg:block' src="./YPS_BACKGROUND.webm" autoPlay={true} loop={true} muted={true} playsInline={true}></video>
-  
-    
-    <img className="w-full h-full object-cover lg:hidden"   src="./YPS_BACKGROUND.gif" alt="" />
-   
-  
-    <div className="bg-gradient-to-b from-secondary to-vampire-black opacity-50 absolute inset-0 h-[60vh] lg:h-[80vh]"></div>
-
-      <div className="absolute inset-0 h-[60vh] lg:h-[80vh] z-20">
-        <div className="bottom-3 absolute right-3 text-right pl-5 max-w-4xl">
-          <motion.h1 className="text-primary font-bold text-7xl xl:text-9xl"
-          initial={{
-            scaleY: 0,
-            opacity: 0
-          }}
-          animate={{
-            scaleY: 1,
-            opacity: 1
-          }}
-          transition={{
-            duration: 1,
-          }}
-          >There Will</motion.h1>
-          <motion.h1 className="text-primary font-bold text-7xl xl:text-9xl"
-          initial={{
-            scaleY: 0,
-            opacity: 0
-          }}
-          animate={{
-            scaleY: 1,
-            opacity: 1
-          }}
-          transition={{
-            duration: 1,
-          }}
-          > Be Some</motion.h1>
-          <motion.p className="text-white lg:text-3xl"
-            initial={{
-              y: 50,
-              opacity: 0
-            }}
-            animate={{
-              y: 0,
-              opacity: 1
-            }}
-            transition={{
-              duration: 1,
-              delay: 0.5,
-            }}
-          >Lorem ipsum, dolor sit amet consectetur adipisicing elit.</motion.p>
-        </div>
-      </div>
-
+<section className="h-screen pt-10">
+  <div className="flex flex-col justify-center h-full px-10">
+    <h1 className='text-primary text-7xl font-regular'>&#8465; WE MAKE FILM MAGIC</h1>
+    <p className='text-primary font-light p-8'>Yare Picture Studio&#174;, dolor sit amet consectetur adipisicing elit. Corrupti aut impedit dolorem alias assumenda quos minus.</p>
+    <div className="items-left w-[45vw]">
+      <a href="" className='text-left leading-7 text-secondary font-light'>The Work We've Done  <hr className='border-secondary my-1'/></a>
+     
     </div>
-
+  </div>
 
 </section>
 );
