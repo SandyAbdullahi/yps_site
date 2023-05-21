@@ -41,16 +41,16 @@ const Header = () => {
       <header className="h-0 inset-x-0 top-0 z-50 sticky">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+            <a href="/" className="text-white -m-1.5 p-1.5 ">
+              <span className="h-auto opacity-70">YARE PICTURE STUDIO</span>
               <img
-                className="h-8 w-auto"
+                className="h-8 w-auto hidden"
                 src="./logo_no_text.png"
                 alt=""
               />
             </a>
           </div>
-          <div className="flex lg:hidden bg-primary rounded-full p-5 shadow-xl">
+          <div className="flex lg:hidden  p-5 ">
             <motion.button
               type="button"
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-100"

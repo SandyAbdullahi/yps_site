@@ -3,3 +3,4 @@ export { default as HeroSection } from './Hero';
 export { default as VelocityScrollAnimation } from './scrollWrap';
 export { default as Footer } from './Footer';
 export { default as ServicesAccordion } from './serviceAccordion';
+export { default as Partners } from './partners';
