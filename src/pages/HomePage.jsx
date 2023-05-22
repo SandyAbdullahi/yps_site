@@ -34,6 +34,10 @@ return (
  <div className="h-full border-[1px] m-4 flex flex-col items-center justify-center rounded-xl p-16">
  <h1 className='text-2xl w-80 px-10 font-bold text-center uppercase leading-none'>We Bring To Life Visions</h1>
  <p className='m-5 text-center'>YARE PICTURE STUDIO</p>
+ <div className="items-center justify-center flex w-[45vw] mt-10">
+      <a href="/services" className='leading-7 text-secondary font-light hover:text-white'>What we do  <hr className='border-secondary my-1'/></a>
+     
+    </div>
  </div>
  <div className="flex px-4 h-96 my-10">
 <video src="./YPS_BACKGROUND.webm" type="video/webm" poster="./YPS_BACKGROUND.gif" playsInline autoPlay loop muted className="rounded-xl h-full object-cover -z-10 opacity-70 ">
