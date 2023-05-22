@@ -40,7 +40,7 @@ return (
     </div>
  </div>
  <div className="flex px-4 h-96 my-10">
-<video src="./im_premium_banking (1080p).webm" type="video/webm" playsInline autoPlay loop muted className="rounded-xl h-full object-cover -z-10 opacity-60 ">
+<video src="./im_premium_banking (1080p).webm" type="video/webm" poster='./im_premium_banking (1080p).gif' playsInline autoPlay loop muted className="rounded-xl h-full object-cover -z-10 opacity-60 ">
 
 </video>
 </div>
