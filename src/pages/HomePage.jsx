@@ -26,7 +26,7 @@ return (
  
 <h2 className='text-lg text-primary font-light px-8 uppercase'>Experience the epitome <br /> of quality in our productions.</h2>
 <div className="flex px-4 h-96 my-10">
-<video src="./safaricom_mfa (1080p).webm" type="video/webm"  playsInline autoPlay loop muted className="rounded-xl h-full object-cover -z-10 opacity-60 ">
+<video src="./safaricom_mfa (1080p).webm" type="video/webm" poster='./safaricom_mfa (1080p).gif' playsInline autoPlay loop muted className="rounded-xl h-full object-cover -z-10 opacity-60 ">
 
 </video>
 </div>
