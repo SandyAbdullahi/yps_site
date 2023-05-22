@@ -23,9 +23,7 @@ return (
  
 
   <HeroSection />
-  <div className="flex ">
-  <video className='object-fit' src="./YPS_BACKGROUND.webm" poster='./YPS_BACKGROUND.gif' autoPlay={true} playsInline={true} muted={true} loop={true}></video>
-  </div>
+ 
 <div className="flex items-center justify-center my-10">
 <h2 className='text-2xl text-center text-primary font-light px-8 uppercase'>Experience the epitome <br /> of quality in our productions.</h2>
 </div>

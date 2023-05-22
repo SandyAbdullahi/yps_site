@@ -12,7 +12,7 @@ const Partners = () => {
             duration: 100,
           }}
           drag="x"
-          dragConstraints={{ left: 0, right: 0 }}
+          dragConstraints={{ left: '20px', right: 0 }}
 
          >
          <img src="./logo/alexanderForbes.png" alt="" className="h-10 m-10" />

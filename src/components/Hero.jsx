@@ -17,31 +17,23 @@ const HeroSection = (props) => {
   };
 
 return (
-<motion.section className="h-full my-14 pt-20">
-  <div className="flex flex-col justify-center h-full px-10 lg:h-screen">
-    <h1 className='text-primary text-7xl font-regular lg:text-9xl'>&#8465; WE MAKE FILM MAGIC</h1>
-    {/* <motion.div
-      
-      initial="hidden"
-      // animate="visible"
-      animate="visible"
-      variants={container}
-    >
+<motion.section className="h-screen p-4">
+  <div className="flex flex-col items-center justify-center h-96 object-cover">
+  <video src="./YPS_BACKGROUND.webm" type="video/webm" poster="./YPS_BACKGROUND.gif" playsInline autoPlay loop muted className="rounded-xl h-96 object-cover -z-10 opacity-70 -mb-20">
 
-        {placeholderText.map((item, index) => {
-          return (
-              <h1 className="text-primary text-7xl font-regular">&#8465; <AnimatedText {...item} key={index} /></h1>
-          ) 
-        })}
-    
-   
-    </motion.div>
-  */}
-    <p className='text-primary font-light my-8 p-4 text-lg'>Yare Picture Studio&#174;, Unleash your imagination with the creative powerhouse.</p>
-    <div className="items-left w-[45vw]">
-      <a href="/services" className='text-left leading-7 text-secondary font-light hover:text-white'>The Work We've Done  <hr className='border-secondary my-1'/></a>
-     
+      </video>
+    <h1 className='relative -top-[15vh] text-primary text-4xl font-regular lg:text-9xl text-center font-bold'>&#8465;YARE <br /> PICTURE <br /> STUDIO&#174;</h1>
+    <div className="flex relative items-center justify-between w-full -top-[12vh] px-5">
+      <div className="rounded-full bg-white h-5 w-5"></div>
+      <hr className="mx-2 w-full"/>
+
+      <div className="rounded-full bg-primary h-5 w-5"></div>
+      <hr className="mx-2 w-full"/>
+
+      <div className="rounded-full bg-white h-5 w-5"></div>
     </div>
+
+
   </div>
 
 
