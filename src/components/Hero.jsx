@@ -18,21 +18,25 @@ const HeroSection = (props) => {
 
 return (
 <motion.section className="h-screen p-4">
-  <div className="flex flex-col items-center justify-center h-96 object-cover">
-  <video src="./YPS_BACKGROUND.webm" type="video/webm" poster="./YPS_BACKGROUND.gif" playsInline autoPlay loop muted className="rounded-xl h-96 object-cover -z-10 opacity-70 -mb-20">
+  <div className="flex flex-col items-center justify-center h-full object-cover">
+  <video src="./YPS_BACKGROUND.webm" type="video/webm" poster="./YPS_BACKGROUND.gif" playsInline autoPlay loop muted className="rounded-xl h-full object-cover -z-10 opacity-70 ">
 
       </video>
-    <h1 className='relative -top-[15vh] text-primary text-4xl font-regular lg:text-9xl text-center font-bold'>&#8465;YARE <br /> PICTURE <br /> STUDIO&#174;</h1>
-    <div className="flex relative items-center justify-between w-full -top-[12vh] px-5">
-      <div className="rounded-full bg-white h-5 w-5"></div>
-      <hr className="mx-2 w-full"/>
+<div className="w-full relative -top-[25vh]">
+<h1 className='relative  text-primary text-4xl font-regular lg:text-9xl text-center font-bold'>YPS&#174; <br /> AMAZING <br /> MOTIONS</h1>
+    <div className="flex relative items-center justify-between w-full px-5">
+      <div className="rounded-full bg-white h-2 w-5"></div>
+      <hr className="mx-2 w-full opacity-30"/>
 
-      <div className="rounded-full bg-primary h-5 w-5"></div>
-      <hr className="mx-2 w-full"/>
+      <div className="rounded-full bg-primary h-2 w-5"></div>
+      <hr className="mx-2 w-full opacity-30"/>
 
-      <div className="rounded-full bg-white h-5 w-5"></div>
+      <div className="rounded-full bg-white h-2 w-5"></div>
     </div>
-
+</div>
+<div className="flex-col">
+<p className="text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eos totam, vero sit, reiciendis doloribus, tenetur sequi ipsam illo ipsa praesentium fugiat modi debitis harum! Dolore veritatis minus tempore maiores?</p>
+</div>
 
   </div>
 

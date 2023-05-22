@@ -78,7 +78,7 @@ const Header = () => {
                 <span className="sr-only">Your Company</span>
                 <img
                   className="h-8 w-auto"
-                  src="./logo.svg"
+                  src="./logo_no_text.png"
                   alt=""
                 />
               </a>
