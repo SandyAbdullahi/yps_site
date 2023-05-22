@@ -34,7 +34,7 @@ return (
       <div className="rounded-full bg-white h-2 w-5"></div>
     </div>
 </div>
-<div className="flex-col">
+<div className="flex-col relative -top-[15vh] p-2">
 <p className="text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eos totam, vero sit, reiciendis doloribus, tenetur sequi ipsam illo ipsa praesentium fugiat modi debitis harum! Dolore veritatis minus tempore maiores?</p>
 </div>
 
