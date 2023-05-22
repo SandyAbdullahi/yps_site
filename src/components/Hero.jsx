@@ -17,7 +17,7 @@ const HeroSection = (props) => {
   };
 
 return (
-<motion.section className="h-screen p-4">
+<motion.section className="h-screen p-4 -mb-16">
   <div className="flex flex-col items-center justify-center h-full object-cover">
   <video src="./YPS_BACKGROUND.webm" type="video/webm" poster="./YPS_BACKGROUND.gif" playsInline autoPlay loop muted className="rounded-xl h-full object-cover -z-10 opacity-70 ">
 
@@ -34,8 +34,8 @@ return (
       <div className="rounded-full bg-white h-2 w-5"></div>
     </div>
 </div>
-<div className="flex-col relative -top-[15vh] p-2">
-<p className="text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eos totam, vero sit, reiciendis doloribus, tenetur sequi ipsam illo ipsa praesentium fugiat modi debitis harum! Dolore veritatis minus tempore maiores?</p>
+<div className="flex-col relative -top-[12vh] p-2">
+<p className="text-primary leading-none text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eos totam, vero sit, reiciendis doloribus, tenetur sequi ipsam illo ipsa praesentium fugiat modi debitis harum! Dolore veritatis minus tempore maiores?</p>
 </div>
 
   </div>

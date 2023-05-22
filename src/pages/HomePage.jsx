@@ -24,12 +24,28 @@ return (
 
   <HeroSection />
  
-<div className="flex items-center justify-center my-10">
-<h2 className='text-2xl text-center text-primary font-light px-8 uppercase'>Experience the epitome <br /> of quality in our productions.</h2>
-</div>
-  <section className='h-full mt-52 text-primary '>
+<h2 className='text-lg text-primary font-light px-8 uppercase'>Experience the epitome <br /> of quality in our productions.</h2>
+<div className="flex px-4 h-96 my-10">
+<video src="./YPS_BACKGROUND.webm" type="video/webm" poster="./YPS_BACKGROUND.gif" playsInline autoPlay loop muted className="rounded-xl h-full object-cover -z-10 opacity-70 ">
 
-    <h1 className='text-7xl w-80 px-10'>We Bring To Life Visions</h1>
+</video>
+</div>
+  <section className='h-full text-primary '>
+ <div className="h-full border-[1px] m-4 flex flex-col items-center justify-center rounded-xl p-16">
+ <h1 className='text-2xl w-80 px-10 font-bold text-center uppercase leading-none'>We Bring To Life Visions</h1>
+ <p className='m-5'>YARE PICTURE STUDIO</p>
+ </div>
+ <div className="flex px-4 h-96 my-10">
+<video src="./YPS_BACKGROUND.webm" type="video/webm" poster="./YPS_BACKGROUND.gif" playsInline autoPlay loop muted className="rounded-xl h-full object-cover -z-10 opacity-70 ">
+
+</video>
+</div>
+<div className="px-4"> 
+<div className="border-[1px] rounded-xl px-2">
+<VelocityScrollAnimation />
+</div>
+</div>
+
     <p className='px-10 text-[1.5rem] font-light mt-20'>Collaborations that create masterpieaces.</p>
 
     <div className="p-10">
@@ -58,22 +74,22 @@ At Yare Picture Studio&#174;, our mission is to deliver quality storytelling tha
     </div>
   </div>
 <div className="row mb-20">
-<div className="flex">
- <img src="./cards/comm.png" alt="" className='p-10 object-fit'/>
+<div className="flex p-10">
+ <img src="./cards/comm.png" alt="" className='object-fit rounded-xl'/>
 
  </div>
  <p className='text-primary px-10'>Feature One</p>
 </div>
 <div className="row mb-20">
-<div className="flex">
- <img src="./cards/docu.png" alt="" className='p-10 object-fit'/>
+<div className="flex p-10">
+ <img src="./cards/comm.png" alt="" className='object-fit rounded-xl'/>
 
  </div>
  <p className='text-primary px-10'>Feature two</p>
 </div>
 <div className="row mb-20">
-<div className="flex">
- <img src="./cards/narr.png" alt="" className='p-10 object-fit'/>
+<div className="flex p-10">
+ <img src="./cards/comm.png" alt="" className='object-fit rounded-xl'/>
 
  </div>
  <p className='text-primary px-10'>Feature three</p>
