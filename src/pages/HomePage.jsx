@@ -33,7 +33,7 @@ return (
   <section className='h-full text-primary '>
  <div className="h-full border-[1px] m-4 flex flex-col items-center justify-center rounded-xl p-16">
  <h1 className='text-2xl w-80 px-10 font-bold text-center uppercase leading-none'>We Bring To Life Visions</h1>
- <p className='m-5'>YARE PICTURE STUDIO</p>
+ <p className='m-5 text-center'>YARE PICTURE STUDIO</p>
  </div>
  <div className="flex px-4 h-96 my-10">
 <video src="./YPS_BACKGROUND.webm" type="video/webm" poster="./YPS_BACKGROUND.gif" playsInline autoPlay loop muted className="rounded-xl h-full object-cover -z-10 opacity-70 ">
