@@ -77,27 +77,29 @@ At Yare Picture Studio&#174;, our mission is to deliver quality storytelling tha
      
     </div>
   </div>
-<div className="row mb-20">
-<div className="flex p-10">
- <img src="./cards/comm.png" alt="" className='object-fit rounded-xl'/>
+<div className="row ">
+<div className="flex flex-col p-10 h-96">
+ <img src="./cards/comm.png" alt="" className='object-cover object-center h-full w-full rounded-xl opacity-60'/>
+ <p className='text-white font-bold relative -top-[10vh] px-10'>Feature One</p>
 
  </div>
- <p className='text-primary px-10'>Feature One</p>
 </div>
-<div className="row mb-20">
-<div className="flex p-10">
- <img src="./cards/comm.png" alt="" className='object-fit rounded-xl'/>
+<div className="row">
+<div className="flex flex-col p-10 h-96">
+ <img src="./cards/docu.png" alt="" className='object-cover object-center h-full w-full rounded-xl opacity-60'/>
+ <p className='text-white font-bold relative -top-[10vh] px-10'>Feature Two</p>
 
  </div>
- <p className='text-primary px-10'>Feature two</p>
 </div>
 <div className="row mb-20">
-<div className="flex p-10">
- <img src="./cards/comm.png" alt="" className='object-fit rounded-xl'/>
+<div className="flex flex-col p-10 h-96">
+ <img src="./cards/film.png" alt="" className='object-cover object-center h-full w-full rounded-xl opacity-60'/>
+ <p className='text-white font-bold relative -top-[10vh] px-10'>Feature Three</p>
 
  </div>
- <p className='text-primary px-10'>Feature three</p>
 </div>
+
+
 </section>
 <hr />
 </motion.div>
